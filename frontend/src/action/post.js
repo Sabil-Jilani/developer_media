@@ -1,7 +1,7 @@
 import  Axios from "axios";
 import { GET_ALL_POSTS, NOT_POSTED,POST_DELETED, POSTED,ERROR_POST, SHOW_POST } from "../reducer/types";
 import { setAlert } from "./alert";
-const URL="http://localhost:8000";
+const URL="https://developer-media.onrender.com";
 
  export const post=(post)=>async dispatch=>{
 try {

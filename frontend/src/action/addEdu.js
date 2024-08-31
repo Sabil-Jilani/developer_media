@@ -3,7 +3,7 @@ import Axios from "axios";
 import {setAlert} from "./alert";
 import { ADD_EDUCATION,DELETE_EDUCATION } from "../reducer/types";
 
-const URL="http://localhost:8000";
+const URL="https://developer-media.onrender.com";
 
 export const addEdu=(data,navigate)=>async dispatch=>{
 try {

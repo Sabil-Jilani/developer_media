@@ -1,6 +1,6 @@
-import Axios from "axios"
-import { GET_PROFILE,CLEAR_PROFILE,GET_ALL_PROFILE } from "../reducer/types";
-const URL="http://localhost:8000";
+import Axios from "axios";
+import { CLEAR_PROFILE, GET_ALL_PROFILE, GET_PROFILE } from "../reducer/types";
+const URL="https://developer-media.onrender.com";
 const {setAlert}=require("./alert")
 export const get_user_profile = (id) =>async dispatch=>{
     try {

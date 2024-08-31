@@ -3,7 +3,7 @@ import { CLEAR_PROFILE, LOGGEDIN, LOGGEDOUT } from "../reducer/types";
 import { setAlert } from "./alert";
 
 
-const URL="http://localhost:8000";
+const URL="https://developer-media.onrender.com";
 
 export const GetUser= ({username,password},navigate)=>{
     return async dispatch=>{ 

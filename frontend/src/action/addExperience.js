@@ -1,7 +1,7 @@
 import {setAlert} from "./alert";
 import Axios from "axios";
 import { ADD_EXPERIENCE, DELETE_EXPERIENCE } from "../reducer/types";
-const URL="http://localHost:8000";
+const URL="https://developer-media.onrender.com";
 
 
 export const addExperience=(data,navigate)=>async dispatch=>{
