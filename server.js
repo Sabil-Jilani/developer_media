@@ -5,7 +5,7 @@ const passport  = require("passport");
 const session=require("express-session");
 const cors=require("cors");
 const path=require("path");
-const port =process.env.BASE_URL||8000;
+const port =process.env.PORT||8000;
 require("dotenv").config();
 
 const userModel =require("./database/model/user");
