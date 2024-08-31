@@ -1,0 +1,74 @@
+const { default: mongoose } = require("mongoose");
+
+const profileSchema=new mongoose.Schema({
+    username:{
+        type:mongoose.Schema.Types.String,
+        ref:"user"
+    },
+    company:String,
+    website:String,
+    location:String,
+    status:{
+        type:String,
+        require:true
+    },
+skills:{
+    type:[String],
+    require:true
+},
+bio:String,
+githubusername:String,
+experience:[{
+    title:{
+         type:String,
+         require:true
+    },
+    company:{
+        type:String,
+        require:true
+   },
+   location:String,
+   from:{
+    type:String,
+    require:true
+},
+to:{
+    type:String,
+    require:true
+},
+current:{type:Boolean,
+default:false},
+description:String
+}],
+education:[{
+    institution:{
+        type:String,
+        required:true
+    },
+    degree:{
+        type:String,
+        required:true
+    },
+    fieldOfStudy:String,
+    from:String,
+    to:String,
+    current:Boolean,
+    description :String,
+    date:{
+        type:Date,
+    default:Date.now()
+}
+}],
+social:{
+    youtube:String,
+    facebook:String,
+    twitter:String,
+    linkedIn:String,
+    instagram:String
+},
+date:{
+    type:Date,
+    default:Date.now
+}
+})
+module.exports= mongoose.model("ProfileModel",profileSchema)

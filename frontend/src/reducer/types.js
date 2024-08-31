@@ -1,0 +1,17 @@
+export const LOGGEDIN="LOGGEDIN";
+export const LOGGEDOUT="LOGGEDOUT";
+export const SET_ALERT="SET_ALERT";
+export const REMOVE_ALERT="REMOVE_ALERT";
+export const GET_PROFILE="GET_PROFILE";
+export const ADD_EXPERIENCE="ADD_EXPERIENCE";
+export const DELETE_EXPERIENCE="DELETE_EXPERIENCE";
+export const ADD_EDUCATION="ADD_EDUCATION";
+export const DELETE_EDUCATION="DELETE_EDUCATION";
+export const GET_ALL_PROFILE="GET_ALL_PROFILE";
+export const CLEAR_PROFILE="CLEAR_PROFILE";
+export const POSTED="POSTED";
+export const ERROR_POST="ERROR_POST";
+export const SHOW_POST="SHOW_POST";
+export const POST_DELETED="POST_DELETED";
+export const GET_ALL_POSTS="GET_ALL_POSTS";
+export const NOT_POSTED="NOT_POSTED";
